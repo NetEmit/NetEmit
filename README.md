@@ -1,2 +1,2 @@
-# FDEP
-Framework Defined Emit Platform
+# NetEmit
+NetEmit - Framework Defined Emit Platform
