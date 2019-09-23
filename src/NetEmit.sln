@@ -7,10 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetEmit", "NetEmit\NetEmit.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5922473F-A325-4690-A546-CAB67CB1B9EE}"
 	ProjectSection(SolutionItems) = preProject
+		..\.editorconfig = ..\.editorconfig
 		Default.ruleset = Default.ruleset
 		Directory.Build.props = Directory.Build.props
 		..\..\NetEmit.InstructionSet.StationeersMIPS\src\Directory.Build.props = ..\..\NetEmit.InstructionSet.StationeersMIPS\src\Directory.Build.props
 		..\..\NetEmit.Platform.Stationeers.IC\src\Directory.Build.props = ..\..\NetEmit.Platform.Stationeers.IC\src\Directory.Build.props
+		..\global.json = ..\global.json
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetEmit.InstructionSet", "NetEmit.InstructionSet\NetEmit.InstructionSet.csproj", "{62F307D5-851C-44A2-BF51-F38FCB3BD971}"

@@ -1,6 +1,8 @@
-﻿namespace NetEmit.Platform
+﻿using NetEmit.Emiters;
+
+namespace NetEmit.Platform
 {
-    public interface IEmitableUnit : IEmitable
-    {
-    }
+	public interface IEmitableUnit : IEmitable<StringEmiter>
+	{
+	}
 }
