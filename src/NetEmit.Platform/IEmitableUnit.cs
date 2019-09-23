@@ -1,8 +1,8 @@
-﻿using NetEmit.Emiters;
-
-namespace NetEmit.Platform
+﻿namespace NetEmit.Platform
 {
-	public interface IEmitableUnit : IEmitable<StringEmiter>
+	public interface IEmitableUnit<T> : IEmitable<T>
+		where T : IEmiter, new()
 	{
+		IEmitable<T> EmitableUnit { get; }
 	}
 }
