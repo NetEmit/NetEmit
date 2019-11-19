@@ -1,8 +1,8 @@
 ﻿namespace NetEmit.Platform
 {
-	public interface IEmitableUnit<T> : IEmitable<T>
-		where T : IEmiter, new()
-	{
-		IEmitable<T> EmitableUnit { get; }
-	}
+  public interface IEmitableUnit<T> : IEmitable<T>
+    where T : IEmitter, new()
+  {
+    IEmitable<T> EmitableUnit { get; }
+  }
 }
