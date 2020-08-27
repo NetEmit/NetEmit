@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Microsoft Managed Recommended Rules" Description="These rules focus on the most critical problems in your code, including potential security holes, application crashes, and other important logic and design errors. It is recommended to include this rule set in any custom rule set you create for your projects." ToolsVersion="10.0">
+<RuleSet Name="Microsoft Managed Recommended Rules" Description="These rules focus on the most critical problems in your code, including potential security holes, application crashes, and other important logic and design errors. It is recommended to include this rule set in any custom rule set you create for your projects." ToolsVersion="16.0">
   <Localization ResourceAssembly="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.dll" ResourceBaseName="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.Localized">
     <Name Resource="MinimumRecommendedRules_Name" />
     <Description Resource="MinimumRecommendedRules_Description" />
@@ -68,34 +68,39 @@
     <Rule Id="CA2241" Action="Warning" />
     <Rule Id="CA2242" Action="Warning" />
   </Rules>
+  <Rules AnalyzerId="Roslynator.CSharp.Analyzers" RuleNamespace="Roslynator.CSharp.Analyzers">
+    <Rule Id="RCS1079" Action="Hidden" />
+    <Rule Id="RCS1160" Action="None" />
+  </Rules>
   <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
-    <Rule Id="SA1200" Action="None" />
-    <Rule Id="SA1503" Action="None" />
-    <Rule Id="SA1310" Action="None" />
-    <Rule Id="SA1600" Action="Hidden" />
-    <Rule Id="SA1633" Action="None" />
-    <Rule Id="SA1009" Action="None" />
-    <Rule Id="SA1101" Action="None" />
-    <Rule Id="SA1201" Action="None" />
-    <Rule Id="SA1306" Action="None" />
-    <Rule Id="SA1309" Action="None" />
-    <Rule Id="SA1507" Action="Info" />
-    <Rule Id="SA1204" Action="None" />
-    <Rule Id="SA1202" Action="None" />
-    <Rule Id="SX1309" Action="Warning" />
-    <Rule Id="SX1309S" Action="Warning" />
-    <Rule Id="SX1101" Action="Info" />
-    <Rule Id="SA1649" Action="Error" />
     <Rule Id="SA1005" Action="None" />
-    <Rule Id="SA1404" Action="None" />
+    <Rule Id="SA1009" Action="None" />
+    <Rule Id="SA1027" Action="None" />
+    <Rule Id="SA1101" Action="None" />
     <Rule Id="SA1116" Action="None" />
     <Rule Id="SA1117" Action="None" />
-    <Rule Id="SA1629" Action="None" />
+    <Rule Id="SA1200" Action="None" />
+    <Rule Id="SA1201" Action="None" />
+    <Rule Id="SA1202" Action="None" />
+    <Rule Id="SA1204" Action="None" />
     <Rule Id="SA1303" Action="None" />
+    <Rule Id="SA1306" Action="None" />
+    <Rule Id="SA1309" Action="None" />
+    <Rule Id="SA1310" Action="None" />
+    <Rule Id="SA1400" Action="Info" />
+    <Rule Id="SA1404" Action="None" />
+    <Rule Id="SA1503" Action="None" />
+    <Rule Id="SA1507" Action="Info" />
+    <Rule Id="SA1600" Action="Hidden" />
     <Rule Id="SA1605" Action="Hidden" />
     <Rule Id="SA1606" Action="Hidden" />
+    <Rule Id="SA0001" Action="Hidden" />
     <Rule Id="SA1614" Action="None" />
-    <Rule Id="SA1400" Action="Info" />
-    <Rule Id="SA1027" Action="None" />
+    <Rule Id="SA1629" Action="None" />
+    <Rule Id="SA1633" Action="None" />
+    <Rule Id="SA1649" Action="Error" />
+    <Rule Id="SX1101" Action="Info" />
+    <Rule Id="SX1309" Action="Warning" />
+    <Rule Id="SX1309S" Action="Warning" />
   </Rules>
 </RuleSet>
