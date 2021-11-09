@@ -1,30 +1,29 @@
 ﻿using System.Text;
 
-namespace NetEmit.Emiters
+namespace NetEmit.Emiters;
+
+public class StringEmiter : IEmitter
 {
-  public class StringEmiter : IEmitter
-  {
-    public StringEmiter()
-    {
-    }
+	public StringEmiter()
+	{
+	}
 
-    public StringEmiter(object initial)
-    {
-      Append(initial);
-    }
+	public StringEmiter(object initial)
+	{
+		Append(initial);
+	}
 
-    private readonly StringBuilder _Builder = new StringBuilder();
+	private readonly StringBuilder _Builder = new();
 
-    public void Append(object addee) => _Builder.Append(addee);
+	public void Append(object addee) => _Builder.Append(addee);
 
-    public void AppendLine(object line) => _Builder.AppendLine(line.ToString());
+	public void AppendLine(object line) => _Builder.AppendLine(line.ToString());
 
-    public void AppendLine() => _Builder.AppendLine();
+	public void AppendLine() => _Builder.AppendLine();
 
-    public IEmitter GetEmitter() => this;
+	public IEmitter GetEmitter() => this;
 
-    public object Result() => _Builder.ToString();
+	public object Result() => _Builder.ToString();
 
-    public override string ToString() => (string)Result();
-  }
+	public override string ToString() => (string)Result();
 }

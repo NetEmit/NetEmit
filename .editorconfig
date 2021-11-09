@@ -6,6 +6,7 @@
 indent_style         = tab
 insert_final_newline = false
 charset              = utf-8-bom
+csharp_style_namespace_declarations=block_scoped:warning
 
 # Code files
 [*.{cs,csx,vb,vbx}]
@@ -138,3 +139,8 @@ csharp_style_var_when_type_is_apparent                                        = 
 
 # SA0001: XML comment analysis is disabled due to project configuration
 dotnet_diagnostic.SA0001.severity                                             = silent
+
+# Code-block preferences
+csharp_prefer_braces = true
+csharp_prefer_simple_using_statement = true:warning
+csharp_style_namespace_declarations = file_scoped : warning

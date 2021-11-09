@@ -1,11 +1,10 @@
-﻿namespace NetEmit
+﻿namespace NetEmit;
+
+public interface IEmitter
 {
-  public interface IEmitter
-  {
-    void Append(object addee);
+	void Append(object addee);
 
-    IEmitter GetEmitter();
+	IEmitter GetEmitter();
 
-    object Result();
-  }
+	object Result();
 }
